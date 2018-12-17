@@ -30,6 +30,54 @@ You can also:
 
 ### Examples
 ![](gif/single_multiple_range_day_selection.gif) ![](gif/highlight_select_range_days.gif)  ![](gif/rtl_support.gif) ![](gif/rtl_support_from_settings.gif) ![](gif/infinite_calendar_load.gif) ![](gif/without_weekdays.gif) ![](gif/previous_next_months_days.gif)
+
+#### How to
+
+To get a Git project into your gradle build:
+
+Step 1. Add the JitPack repository to your build file 
+
+Add it in your root build.gradle at the end of repositories:
+```
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
+}
+```
+
+Step 2. Add the dependency
+```
+dependencies {
+    implementation 'com.github.ShahulAndro:sha-calendar-kotlin:1.0'
+}
+```
+
+To get a Git project into your maven build:
+
+Step 1. Add the JitPack repository to your build file 
+
+```
+<repositories>
+    <repository>
+	    <id>jitpack.io</id>
+		<url>https://jitpack.io</url>
+	</repository>
+</repositories>
+```
+
+Step 2. Add the dependency
+
+```
+<dependency>
+    <groupId>com.github.ShahulAndro</groupId>
+	<artifactId>sha-calendar-kotlin</artifactId>
+	<version>Tag</version>
+</dependency>
+```
+
+
 ```
 <com.sha.calendar.kotlin.lib.view.CalendarPickerRecyclerView
         android:id="@+id/calendar_recyclerview"
